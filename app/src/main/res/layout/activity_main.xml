@@ -101,43 +101,42 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/tabTiempo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/lblDe"
-                        android:text="De"
+                        android:id="@+id/lblDeT"
+                        android:text="DE:"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="90dp"
-                        android:layout_marginTop="60dp">
-                    </TextView>
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="90dp"
-                        android:layout_marginTop="60dp"
-                        android:text="A"
-                        android:id="@+id/lblA"
-                        ></TextView>
+                        android:layout_height="wrap_content" />
                     <Spinner
-                        android:id="@+id/sde"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:entries="@array/Tiempo"
+                        android:id="@+id/cboDeT"
                         android:layout_marginTop="40dp"
                         android:layout_marginLeft="100dp"
-                        ></Spinner>
-                    <Spinner
-                        android:id="@+id/spa"
+                        android:entries="@array/Tiempo"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="40dp"
-                        android:layout_marginLeft="100dp">
-                    </Spinner>
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/lblAT"
+                        android:text="A:"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Spinner
+                        android:id="@+id/cboAT"
+                        android:layout_marginTop="90dp"
+                        android:layout_marginLeft="100dp"
+                        android:entries="@array/Tiempo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
                 </RelativeLayout>
+
             </FrameLayout>
         </LinearLayout>
     </TabHost>

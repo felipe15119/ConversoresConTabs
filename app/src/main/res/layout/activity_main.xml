@@ -20,7 +20,8 @@
             <TabWidget
                 android:id="@android:id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="90dp"
+                />
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
@@ -199,36 +200,71 @@
                         android:layout_height="wrap_content"/>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/tabVolumen"
+                android:id="@+id/tabVolumen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/lblDeV"
+                    android:text="DE:"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/cboDeV"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="100dp"
+                    android:entries="@array/Volumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/lblAV"
+                    android:text="A:"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Spinner
+                    android:id="@+id/cboAV"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="100dp"
+                    android:entries="@array/Volumen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tabTrasnferenciaDatos"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
                     <TextView
-                        android:id="@+id/lblDeV"
+                        android:id="@+id/lblDeTD"
                         android:text="DE:"
                         android:layout_marginTop="40dp"
                         android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <Spinner
-                        android:id="@+id/cboDeV"
+                        android:id="@+id/cboDeTD"
                         android:layout_marginTop="40dp"
                         android:layout_marginLeft="100dp"
-                        android:entries="@array/Volumen"
+                        android:entries="@array/Transferenciadedatos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:id="@+id/lblAV"
+                        android:id="@+id/lblATD"
                         android:text="A:"
                         android:layout_marginTop="90dp"
                         android:layout_marginLeft="60dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <Spinner
-                        android:id="@+id/cboAV"
+                        android:id="@+id/cboATD"
                         android:layout_marginTop="90dp"
                         android:layout_marginLeft="100dp"
-                        android:entries="@array/Volumen"
+                        android:entries="@array/Transferenciadedatos"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </RelativeLayout>

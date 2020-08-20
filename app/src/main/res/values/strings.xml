@@ -82,7 +82,6 @@
     </string-array>
 
     <string-array name="Volumen">
-        <item>Seleccione una de las opciones</item>
         <item>Galón estadounidense</item>
         <item>Cuarto estadounidense</item>
         <item>Pinta estadounidense</item>
@@ -90,7 +89,8 @@
         <item>Onza líquida estadounidense</item>
         <item>Cucharada estadounidense</item>
         <item>Cucharadita estadounidense</item>
-        <item>Metro</item>
+        <item>Metro Cúbico</item>
+        <item>Litro</item>
         <item>Mililitro</item>
         <item>Galón imperial</item>
         <item>Cuarto imperial</item>
